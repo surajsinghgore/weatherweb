@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#bold {
+  font-weight: 600;
+}
+/* full page design */
+.fullPage {
+  width: 100%;
+  height: 89vh;
+  padding-top: 5%;
+  background-color: rgb(3, 89, 160);
+}
+/* card styling */
+.fullPage .card {
+  width: 30%;
+  margin-left: 35%;
+  position: relative;
+  border-radius: 15px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+/* card topHeader */
+.fullPage .card .topHeader {
+  width: 100%;
+  margin-top: 3%;
+  display: flex;
+  height: auto;
+}
+
+.fullPage .card .topHeader #location {
+  width: 40px;
+  margin-top: 4%;
+  height: 50px;
+  margin-left: 5%;
+}
+
+.fullPage .card .topHeader h1 {
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-top: 7%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.fullPage .card .topHeader .search {
+  position: absolute;
+  top: 3%;
+  right: 8%;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(207, 245, 255);
+  border-radius: 60px;
+  margin-left: 35%;
+  margin-top: 4%;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+.fullPage .card .topHeader .search:hover {
+  background-color: rgb(7, 180, 227);
+}
+.fullPage .card .topHeader .search img {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  margin-top: 22%;
+}
+/* main temp section */
+.fullPage .card .tempSection {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.fullPage .card .tempSection img {
+  width: 300px;
+  margin-top: -15%;
+}
+/* temp */
+.fullPage .card .tempContainer {
+  width: 100%;
+  text-align: center;
+  margin-top: -16%;
+}
+.fullPage .card .temp {
+  font-size: 40px;
+}
+.fullPage .card .temp span {
+  font-weight: 700;
+  font-size: 50px;
+}
+.fullPage .card .temp sup {
+  color: rgb(72, 72, 72);
+}
+.fullPage .card .des {
+  margin-top: 2%;
+  font-weight: 700;
+  font-size: 24px;
+  width: 100%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: capitalize;
+}
+/* bottom section */
+.fullPage .card .bottomSection {
+  display: flex;
+  width: 100%;
+  margin-top: 13%;
+  margin-bottom: 8%;
+  padding-left: 4%;
+}
+.fullPage .card .bottomSection .section {
+  width: 50%;
+  display: flex;
+  padding-left: 3%;
+}
+
+.fullPage .card .bottomSection .section .details h2,
+.fullPage .card .bottomSection .section .detail h2 {
+  font-weight: 800;
+  margin-left: 10%;
+}
+.fullPage .card .bottomSection .section .details h3,
+.fullPage .card .bottomSection .section .detail h3 {
+  font-weight: 300;
+  margin-left: 10%;
+  width: 100%;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+#wind {
+  width: 35px;
+  height: 39px;
+}
+
+/* searchInputSection */
+
+.fullPage .card .searchInputSection {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+}
+.fullPage .card .searchInputSection #close {
+  position: absolute;
+  top: -1.2%;
+  width: 50px;
+  cursor: pointer;
+  right: -1.5%;
+}
+.fullPage .card .searchInputSection input {
+  width: 80%;
+  margin-top: 30%;
+  padding: 2% 4%;
+  font-size: 22px;
+  margin-left: 10%;
+  outline: none;
+  border: 2px solid skyblue;
+}
+.fullPage .card .searchInputSection .suggestion {
+  width: 79%;
+  margin-left: 10%;
+  margin-top: -1%;
+  height: 40.4%;
+  overflow: hidden;
+  border: 2px solid skyblue;
+
+  list-style: none;
+}
+.fullPage .card .searchInputSection .suggestion li {
+  padding-left: 2%;
+  font-size: 20px;
+  padding: 2% 4%;
+  transition: all 0.2s;
+  color: rgb(78, 78, 78);
+  margin-top: 1%;
+}
+.fullPage .card .searchInputSection .suggestion li:hover {
+  color: rgb(2, 2, 2);
+  cursor: pointer;
+  background-color: #f3f3f3;
+}
+
+/* make website responsive for smaller devices */
+@media screen and (max-width: 1200px) {
+  body {
+    background-color: rgb(3, 89, 160);
+  }
+  .fullPage {
+    height: auto;
+    padding-top: 8%;
+    padding-bottom: 8%;
+  }
+
+  .fullPage .card {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .fullPage .card .topHeader {
+    margin-top: 3%;
+  }
+  .fullPage .card .topHeader #location {
+    width: 10vw;
+    margin-top: 4%;
+    height: auto;
+    margin-left: 5%;
+  }
+
+  .fullPage .card .topHeader h1 {
+    font-size: 6vw;
+    margin-top: 6%;
+  }
+
+  .fullPage .card .topHeader .search {
+    position: absolute;
+    top: 2%;
+    right: 8%;
+    width: 11vw;
+    height: auto;
+
+    margin-top: 4%;
+    padding: 2% 0%;
+  }
+
+  .fullPage .card .topHeader .search img {
+    width: 6vw;
+    height: auto;
+    margin-left: 20%;
+    margin-top: 0%;
+  }
+  .fullPage .card .tempSection img {
+    width: 80vw;
+  }
+
+  .fullPage .card .tempContainer {
+    width: 100%;
+    text-align: center;
+    margin-top: -16%;
+  }
+  .fullPage .card .temp {
+    font-size: 10vw;
+  }
+
+  .fullPage .card .temp span {
+    font-size: 13vw;
+  }
+  .fullPage .card .des {
+    margin-top: 2%;
+
+    font-size: 6vw;
+  }
+
+  .fullPage .card .bottomSection {
+    display: flex;
+    width: 100%;
+    margin-top: 13%;
+    margin-bottom: 8%;
+    padding-left: 0%;
+  }
+  .fullPage .card .bottomSection .section {
+    width: 50%;
+    display: flex;
+    padding-left: 0%;
+  }
+  .fullPage .card .bottomSection .section:first-child {
+    padding-left: 6%;
+  }
+  .fullPage .card .bottomSection .section .details h2,
+  .fullPage .card .bottomSection .section .detail h2 {
+    font-size: 5vw;
+    margin-left: 10%;
+  }
+
+  .fullPage .card .bottomSection .section .details h3,
+  .fullPage .card .bottomSection .section .detail h3 {
+    font-size: 5vw;
+  }
+  #wind {
+    width: 10vw;
+    height: 10vw;
+  }
+  #humidity {
+    width: 12vw;
+    height: auto;
+  }
+  .fullPage .card .searchInputSection #close {
+    top: -1.71%;
+    width: 16vw;
+
+    right: -2.2%;
+  }
+
+  .fullPage .card .searchInputSection input {
+    font-size: 6vw;
+  }
+}

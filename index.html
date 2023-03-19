@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- website title -->
+    <title>Weather Web</title>
+    <!-- favicon of website -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon.png" />
+    <!-- meta tag for seo search -->
+    <meta name="title" content="Weather Web" />
+    <meta
+      name="description"
+      content="this website will give exact weather information all around the world"
+    />
+    <meta
+      name="keywords"
+      content="weather web, weather app,chandigarh weather , delhi weather,prp weather app, weather live forecaste, weather , weather app, forecaste web, tommorrow chandigarh weather"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content=" days" />
+    <meta name="author" content="suraj singh , prp wesite" />
+    <!-- css file link -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- main div -->
+    <div class="fullPage">
+      <!-- card -->
+
+      <div class="card">
+        <!-- top section in card -->
+        <div class="topHeader">
+          <img src="./icon/location.svg" alt="location svg" id="location" />
+          <!-- location of city in text -->
+          <h1 id="city"></h1>
+          <div class="search" title="search" onclick="EnableSearch()">
+            <img src="./icon/search.png" alt="search svg" id="search" />
+          </div>
+        </div>
+
+        <!-- main temp section -->
+        <div class="tempSection">
+          <!-- weather icon image -->
+          <img src="./icon/sun.svg" alt="sun svg" id="tempIcon" />
+        </div>
+        <!-- temp container -->
+        <div class="tempContainer">
+          <!-- minimum temperature container -->
+          <div class="temp">
+            <span id="temp"></span><sup>°<sup id="bold">c</sup></sup>
+          </div>
+          <!-- temperature container -->
+          <div class="des" id="tempDes"></div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="bottomSection">
+          <!-- humidity container -->
+          <div class="section">
+            <img src="./icon/humiditi.gif" alt="humidity svg" id="humidity" />
+            <div class="detail">
+              <!-- humidity shows -->
+              <h2 id="humidityText"></h2>
+              <h3>humidity</h3>
+            </div>
+          </div>
+
+          <!-- wind speed shows -->
+          <div class="section">
+            <img src="./icon/wind.gif" alt="wind svg" id="wind" />
+            <div class="details">
+              <!-- wind speed container -->
+              <h2><span id="windspeed"></span>Km/h</h2>
+              <h3>Wind Speed</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- hide search bar section-->
+        <div class="searchInputSection" id="searchInputSectionID">
+          <img
+            src="./icon/close.png"
+            alt="close svg"
+            id="close"
+            title="Close"
+            onclick="closeSearchBar()"
+          />
+          <form id="form">
+            <input
+              type="search"
+              name="search"
+              id="searhInput"
+              placeholder="🔍 Search your City.."
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- javascript file link -->
+    <script src="./script.js"></script>
+  </body>
+</html>
